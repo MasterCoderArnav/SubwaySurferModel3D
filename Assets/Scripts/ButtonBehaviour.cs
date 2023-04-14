@@ -17,4 +17,15 @@ public class ButtonBehaviour : MonoBehaviour
         FindObjectOfType<AudioManager>().playSound("ButtonClick");
         Application.Quit();
     }
+    public void viewInstructions()
+    {
+        FindObjectOfType<AudioManager>().playSound("ButtonClick");
+        SceneManager.LoadScene("instructions");
+    }
+
+    public void backToMainMenu()
+    {
+        FindObjectOfType<AudioManager>().playSound("ButtonClick");
+        SceneManager.LoadScene("MainMenu");
+    }
 }
